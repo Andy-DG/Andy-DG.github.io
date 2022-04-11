@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon"
+          type="image/png"
+          href="./img/flavi.png">
+    <link rel="stylesheet" href="./scss/style.css"/>
+    <title>Andy De Gheldere</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script async custom-element="amp-position-observer"
+            src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+</head>
+<body id="home">
+<!-- Hero -->
+<section class="hero">
+    <div class="name-box">
+        <h1>Andy De Gheldere</h1>
+        <h3>Software developer trainee</h3>
+    </div>
+    <div class="nav">
+        <a class='logo' href="#home">
+            adg
+        </a>
+        <input type="checkbox" class='menu-btn' id="menu-btn"/>
+        <label for="menu-btn" class="menu-icon">
+            <span class="menu-icon__line"></span>
+        </label>
+        <ul class="nav-list">
+            <a class="nav-tab" href="#tab-about">About</a>
+            <a class="nav-tab" href="#tab-skills">Skills</a>
+            <a class="nav-tab" href="#tab-contact">Contact</a>
+        </ul>
+    </div>
+</section>
+
+<!-- Main -->
+<main class="et-main">
+    <section class="et-slide" id="tab-about">
+        <div class="container-slide" data-aos="fade-right">
+            <h1>Welcome</h1>
+            <h3>My name is Andy De Gheldere. I'm 26 years old and live in Bruges.
+                I'm currently on a journey to become a fullstack software developer.
+                In my free time I like to play the piano and go for a run/swim.
+                Get to know me better with the help of this website.</h3>
+        </div>
+    </section>
+    <section class="et-slide" id="tab-skills">
+        <div class="container-slide" data-aos="fade-right">
+            <h1>Flexible Skillset</h1>
+            <h3>My background in graphic design and passion for coding support me to be creative and technical.
+                Because of these skills I have the ability to work both autonomously and in team.</h3>
+            <amp-position-observer layout="nodisplay" on="enter:load.start"></amp-position-observer>
+            <div class="skill-wrap" data-aos="fade-right">
+                <div class="container">
+                    <h2 id='skill_level'>Coding</h2>
+                    <div class="bar advanced" data-skill="HTML5"></div>
+                    <div class="bar advanced" data-skill="CSS3 (+ LESS/SASS)"></div>
+                    <div class="bar advanced" data-skill="Python"></div>
+                    <div class="bar basic" data-skill="Java"></div>
+                    <div class="bar learning" data-skill="Javascript"></div>
+                </div>
+                <div class="container">
+                    <h2>Graphics</h2>
+                    <div class="bar expert" data-skill="Photoshop"></div>
+                    <div class="bar expert" data-skill="Illustrator"></div>
+                    <div class="bar expert" data-skill="InDesign"></div>
+                    <div class="bar advanced" data-skill="Lightroom"></div>
+                    <div class="bar advanced" data-skill="Acrobat"></div>
+                </div>
+                <div class="container">
+                    <h2>Video</h2>
+                    <div class="bar expert" data-skill="Premiere Pro"></div>
+                    <div class="bar advanced" data-skill="After Effects"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="et-slide" id="tab-contact">
+        <div class="container-slide" data-aos="fade-right">
+            <h1>Contact Me</h1>
+            <h3>Hopefully you've got to know me a little better. If there's anything you want to ask me, you can send me an e-mail to
+                <a href="mailto: andy.degheldere@gmail.com">andy.degheldere@gmail.com</a> or fill in this form.</h3>
+            <div class="form">
+                <form action="https://formspree.io/f/xpzorrng" method="POST">
+                    <label for="message"></label><textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+</main>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init(
+        {
+            duration: 1000
+        }
+    );
+</script>
+<script src="./scripts/index.js"></script>
+</body>
+</html>
+
+//
